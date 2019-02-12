@@ -110,6 +110,8 @@ parser.add_argument('--label', dest='label', type=int, default=0, help='label as
 args = parser.parse_args()
 
 if __name__ == "__main__":
+    print("current dir=" + os.getcwd())
+
     if args.charset in ['CN', 'JP', 'KR', 'CN_T']:
         charset = locals().get("%s_CHARSET" % args.charset)
     else:

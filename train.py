@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 import tensorflow as tf
 import argparse
+import os # For Debug print
 
 from model.unet import UNet
 
@@ -43,6 +44,8 @@ args = parser.parse_args()
 
 
 def main(_):
+    print("current dir=" + os.getcwd())
+
     config = tf.ConfigProto()
     config.gpu_options.allow_growth = True
 

@@ -3,3 +3,8 @@ datasets/
 experiments/
 .DS_Store
 .idea/
+/.vs
+/data/combine_256_MsGo_ShinGoProR/combine_256_MsGo_ShinGoProR
+/save
+/zi2zi.pyproj
+/zi2zi.sln
